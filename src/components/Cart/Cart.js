@@ -11,7 +11,7 @@ const Cart = (props) => {
     </ul>
   );
   return (
-    <Modal>
+    <Modal onClose={props.onClick}>
       {cartItems}
       <div className={classes.total}>
         <span>Total Amount</span>
